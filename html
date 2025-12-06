@@ -1,0 +1,81 @@
+<!-- Combined HTML/CSS/JS code for GloSafe website -->
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>GloSafe</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+<h1 class="glow-title">GloSafe</h1>
+<img src="images/glosafe_logo.png" class="logo" alt="GloSafe Logo">
+</header>
+<main>
+<h2 class="section-title">Glow in the Dark Arm Cuff</h2>
+<a href="product.html">
+<img src="images/arm_cuff_image.png" class="product-image" alt="Glow in the Dark Arm Cuff">
+</a>
+<h2 class="section-title">Ad</h2>
+<video width="600" controls>
+<source src="videos/armband_ad.mov" type="video/quicktime">
+<source src="videos/armband_ad.mp4" type="video/mp4">
+Your browser does not support video playback.
+</video>
+</main>
+</body>
+</html>
+
+
+<!-- product.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>GloSafe – Customize</title>
+<link rel="stylesheet" href="styles.css">
+<script>
+function showForm() {
+document.getElementById("orderForm").style.display = "block";
+}
+function placeOrder() {
+const embroidery = document.getElementById("embroidery").value.trim();
+const price = embroidery.length > 0 ? 20 : 15;
+document.getElementById("priceDisplay").innerText = "Your total today will be $" + price;
+showForm();
+}
+</script>
+</head>
+<body>
+<header>
+<h1 class="glow-title">GloSafe</h1>
+<img src="images/glosafe_logo.png" class="logo" alt="GloSafe Logo">
+</header>
+<main>
+<h2 class="section-title">Customize Your GlowSafe Arm Cuff</h2>
+<section class="info-box">
+<h3>About the Arm Cuff</h3>
+<p>Our GlowSafe arm cuffs are made from durable glow-in-the-dark TPU material, providing strong, flexible, long-lasting visibility in darkness.</p>
+</section>
+<section class="info-box">
+<h3>Our Intentions</h3>
+<p>Our glow-in-the-dark arm bands are designed to ensure safety for humans in dark environments. They are customizable in color, size, shape, and embroidery to maximize satisfaction.</p>
+<p>These products are ideal for parents, guardians, athletes, and trainers who need reliable visibility to prevent accidents.</p>
+</section>
+<form class="order-box">
+<label>Color (Glows in Dark):</label>
+<select>
+<option>Green</option>
+<option>Yellow</option>
+<option>Pink</option>
+</select>
+<label>Diameter Size:</label>
+<select>
+<option>3 inches</option>
+<option>5 inches</option>
+<option>7 inches</option>
+</select>
+<label>Embroidery (Optional, up to 20 letters):</label>
+<input type="text" id="embroidery" maxlength="20">
+</style>
