@@ -1,0 +1,88 @@
+body {
+    background-color: black;
+    color: #a2ff9e;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.glow-title {
+    font-size: 48px;
+    color: #00ff66;
+    text-shadow: 0 0 20px #00ff66, 0 0 40px #00ff66;
+}
+
+.logo {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 120px;
+}
+
+.section-title {
+    font-size: 28px;
+    margin-top: 40px;
+    text-shadow: 0 0 10px #00ff66;
+}
+
+.product-image {
+    width: 350px;
+    border: 3px solid #00ff66;
+    border-radius: 15px;
+    box-shadow: 0 0 25px #00ff66;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+video {
+    margin-top: 25px;
+    border: 3px solid #00ff66;
+    border-radius: 10px;
+    box-shadow: 0 0 25px #00ff66;
+}
+
+.order-box, .info-box {
+    background-color: #0f0f0f;
+    border: 2px solid #00ff66;
+    padding: 20px;
+    border-radius: 15px;
+    width: 60%;
+    margin: 25px auto;
+    box-shadow: 0 0 20px #00ff66;
+}
+
+.order-box label, .info-box h3 {
+    display: block;
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+input, select {
+    width: 60%;
+    padding: 8px;
+    margin-top: 10px;
+    background-color: black;
+    color: #00ff66;
+    border: 2px solid #00ff66;
+    border-radius: 8px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    font-size: 18px;
+    background-color: #00ff66;
+    color: black;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover {
+    box-shadow: 0 0 20px #00ff66;
+}
+
+.total {
+    margin-top: 20px;
+    font-size: 24px;
+    text-shadow: 0 0 10px #00ff66;
+}
