@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>GloSafe – Customize</title>
+<link rel="stylesheet" href="styles.css">
+<script>
+function placeOrder() {
+    const embroidery = document.getElementById("embroidery").value.trim();
+    const price = embroidery.length > 0 ? 20 : 15;
+
+    document.getElementById("totalDisplay").innerText =
+        "Your total today will be $" + price;
+}
+</script>
+</head>
+
+<body>
+
+<header>
+    <h1 class="glow-title">GloSafe</h1>
+    <img src="images/glosafe_logo.png" class="logo" alt="GloSafe Logo">
+</header>
+
+<main>
+
+<h2 class="section-title">Customize Your GlowSafe Arm Cuff</h2>
+
+<!-- Product Information Section -->
+<section class="info-box">
+    <h3>About the Arm Cuff</h3>
+    <p>
+        Our GlowSafe arm cuffs are made from durable glow-in-the-dark TPU material. TPU provides flexibility, strength, and long-lasting glow performance, ensuring the band stays lightweight and comfortable while offering high-visibility in dark environments.
+    </p>
+</section>
+
+<section class="info-box">
+    <h3>Our Intentions</h3>
+    <p>
+        Our glow-in-the-dark arm bands are designed to ensure safety for humans while performing daily tasks where darkness increases the risk of injury. These products are fully customizable in color, size, shape, and embroidery to guarantee maximum satisfaction for each customer.
+    </p>
+    <p>
+        GlowSafe products are ideal for anyone concerned with home and nighttime safety, such as parents and guardians, as well as those needing visibility while exercising—like athletes and trainers—when light is limited.
+    </p>
+</section>
+
+<!-- Customization Form -->
+<form class="order-box">
+    <label>Color (Glows in Dark):</label>
+    <select>
+        <option>Green</option>
+        <option>Yellow</option>
+        <option>Pink</option>
+    </select>
+
+    <label>Diameter Size:</label>
+    <select>
+        <option>3 inches</option>
+        <option>5 inches</option>
+        <option>7 inches</option>
+    </select>
+
+    <label>Embroidery (Optional, up to 20 letters):</label>
+    <input type="text" id="embroidery" maxlength="20">
+
+    <button type="button" onclick="placeOrder()">Place Order</button>
+</form>
+
+<p id="totalDisplay" class="total"></p>
+
+</main>
+
+</body>
+</html>
